@@ -47,4 +47,5 @@ Change the fields for development, test, and production
 
 ## Start
 First: `npm install`
+Run build: `npm run-script build`
 To start: `npm start`
