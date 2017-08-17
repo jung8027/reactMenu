@@ -15,4 +15,3 @@ bundle.js.map
 # misc
 .DS_Store
 npm-debug.log
-config.json
