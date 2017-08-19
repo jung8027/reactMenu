@@ -9,7 +9,7 @@ import Home from '../src/home.js';
 import About from '../src/about.js';
 import Topics from '../src/topics.js';
 
-const BasicExample = () => (
+const AppRouter = () => (
   <Router>
     <div>
       <ul>
@@ -29,4 +29,4 @@ const BasicExample = () => (
   </Router>
 )
 
-export default BasicExample
+export default AppRouter
