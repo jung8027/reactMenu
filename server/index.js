@@ -12,7 +12,7 @@ applyExpressMiddleware(app);
 
 db.sequelize.sync().then(() => {
   // API route
-  // app.use('/api', router);
+  app.use('/api', router);
 
   // Front-End Route
   app.get('/*', (req, res) => {
