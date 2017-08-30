@@ -8,6 +8,7 @@ import {
 import Home from '../src/home.js';
 import About from '../src/about.js';
 import Topics from '../src/topics.js';
+import User from '../src/user.js';
 
 const AppRouter = () => (
   <Router>
@@ -16,6 +17,7 @@ const AppRouter = () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
+        <li><Link to="/user">User</Link></li>
       </ul>
 
       <hr/>
@@ -25,6 +27,7 @@ const AppRouter = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
+      <Route path="/user" component={User}/>
     </div>
   </Router>
 )

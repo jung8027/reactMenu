@@ -1,7 +1,10 @@
 import React from 'react';
 
 class User extends React.Component{
-	constructor(){
+	constructor(props){
+		super(props);
+		this.inputChange = this.inputChange.bind(this);
+		this.submitInfo = this.submitInfo.bind(this);
 		this.state = {
 			username: '',
 			email: '',
@@ -10,13 +13,13 @@ class User extends React.Component{
 	}
 
 	inputChange(eventType, event){
-		event.preventDefault()
+		event.preventDefault();
 		this.setState({ [eventType]: event.target.value });
 	}
 
-	submitInfo(){
-		event.preventDefault()
-		console.log(this.state)
+	submitInfo(event){
+		event.preventDefault();
+		console.log(this.state);
 	}
 
 	render(){
@@ -24,14 +27,14 @@ class User extends React.Component{
 			<div>
 				<p>User Sign Up:</p>
 				<br/>
-				<form>
-					<input id="username" type="text" placeholder="User Name" onChange={this.inputChange.bind(this, 'username')} required />
+				<form onSubmit={this.submitInfo}>
+					<input id="username" type="text" placeholder="User Name" onChange={this.inputChange.bind(this, 'username')} />
 					<br/>
-					<input id="email" type="email" placeholder="Email" onChange={this.inputChange.bind(this, 'email')} required />
+					<input id="email" type="email" placeholder="Email" onChange={this.inputChange.bind(this, 'email')} />
 					<br/>
-					<input id="password" type="password" placeholder="Password" onChange={this.inputChange.bind(this, 'password')} required />
+					<input id="password" type="password" placeholder="Password" onChange={this.inputChange.bind(this, 'password')} />
 					<br/>
-					<input type="submit" value="Submit" onSubmit={this.submitInfo} />
+					<input type="submit" value="Submit" />
 				</form>
 			</div>
 		)
