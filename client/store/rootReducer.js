@@ -1,9 +1,10 @@
 import {combineReducers} from 'redux';
-// import mentorReducer from '../features/mentor/MentorReducer';
+import {todos, visibilityFilter} from '../src/todoList/todoReducers';
 
 
 const rootReducer = {
-	// mentorReducer
+	todos,
+	visibilityFilter
 };
 
 const reducer = combineReducers(rootReducer);

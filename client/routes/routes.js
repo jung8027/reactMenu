@@ -9,6 +9,7 @@ import Home from '../src/home.js';
 import About from '../src/about.js';
 import Topics from '../src/topics.js';
 import User from '../src/user.js';
+import TodoList from '../src/todoList/todoList.js';
 
 const AppRouter = () => (
   <Router>
@@ -18,6 +19,7 @@ const AppRouter = () => (
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
         <li><Link to="/user">User</Link></li>
+        <li><Link to="/todo">TodoList</Link></li>
       </ul>
 
       <hr/>
@@ -28,6 +30,7 @@ const AppRouter = () => (
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
       <Route path="/user" component={User}/>
+      <Route path="/todo" component={TodoList}/>
     </div>
   </Router>
 )
