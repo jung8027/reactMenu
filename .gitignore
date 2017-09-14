@@ -9,10 +9,6 @@ coverage
 # production
 build
 
-bundle.js
-bundle.js.map
-
 # misc
 .DS_Store
 npm-debug.log
-config.json
