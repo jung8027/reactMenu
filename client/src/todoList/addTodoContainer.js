@@ -7,7 +7,7 @@ let AddTodo = ({ dispatch }) => {
 
   return (
     <div>
-      <p>Hello</p>
+      <p>Add to the list</p>
       <form
         onSubmit={e => {
           e.preventDefault()
